@@ -1,5 +1,4 @@
 import contextlib
-import functools
 import importlib
 import importlib.abc
 import importlib.machinery
@@ -14,6 +13,7 @@ import zipimport
 from pathlib import Path
 from zipfile import ZipFile
 
+from .compat import functools  # isort: split
 from .utils import (
     Config,
     get_executable_path,
